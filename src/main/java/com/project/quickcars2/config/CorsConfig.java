@@ -15,6 +15,7 @@ public class CorsConfig {
                 registry.addMapping("/home/**")
                         .allowedOrigins("http://localhost:8080")
                         .allowedMethods("GET")
+
                         .allowedHeaders("X-API-KEY");
 
                 registry.addMapping("/rental/**")
